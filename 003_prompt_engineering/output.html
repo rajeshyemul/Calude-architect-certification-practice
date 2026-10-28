@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Evaluation Report</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 24px;
+            background-color: #f8fafc;
+            color: #1e293b;
+        }
+        .header {
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            color: #ffffff;
+            padding: 24px;
+            border-radius: 8px;
+            margin-bottom: 24px;
+        }
+        .header h1 { margin: 0 0 16px 0; font-size: 24px; }
+        .summary-stats {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        .stat-box {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 6px;
+            padding: 12px 20px;
+            min-width: 140px;
+        }
+        .stat-label { font-size: 12px; text-transform: uppercase; opacity: 0.8; }
+        .stat-value { font-size: 26px; font-weight: bold; margin-top: 4px; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        th {
+            background-color: #334155;
+            color: #ffffff;
+            text-align: left;
+            padding: 12px 16px;
+            font-size: 13px;
+            text-transform: uppercase;
+        }
+        td {
+            padding: 14px 16px;
+            border-bottom: 1px solid #e2e8f0;
+            vertical-align: top;
+            font-size: 14px;
+        }
+        tr:nth-child(even) { background-color: #f8fafc; }
+        .score {
+            font-weight: bold;
+            padding: 4px 10px;
+            border-radius: 9999px;
+            display: inline-block;
+            text-align: center;
+        }
+        .score-high { background-color: #dcfce7; color: #15803d; }
+        .score-medium { background-color: #fef9c3; color: #a16207; }
+        .score-low { background-color: #fee2e2; color: #b91c1c; }
+        .output pre {
+            background-color: #f1f5f9;
+            border: 1px solid #cbd5e1;
+            border-radius: 4px;
+            padding: 10px;
+            margin: 0;
+            font-family: Consolas, Monaco, "Courier New", monospace;
+            font-size: 12px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            max-height: 250px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Prompt Evaluation Report</h1>
+        <div class="summary-stats">
+            <div class="stat-box">
+                <div class="stat-label">Total Test Cases</div>
+                <div class="stat-value">2</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-label">Average Score</div>
+                <div class="stat-value">8.0 / 10</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-label">Pass Rate (&ge;7)</div>
+                <div class="stat-value">100.0%</div>
+            </div>
+        </div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 15%;">Scenario</th>
+                <th style="width: 20%;">Prompt Inputs</th>
+                <th style="width: 20%;">Solution Criteria</th>
+                <th style="width: 30%;">Output</th>
+                <th style="width: 5%;">Score</th>
+                <th style="width: 10%;">Reasoning</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td><strong>Standard test scenario #2 for Write a compact, concise 1-day meal plan for a single athlete</strong></td>
+                <td><strong>height:</strong> 178<br><strong>weight:</strong> 75<br><strong>goal:</strong> Build lean muscle and maintain cardio endurance<br><strong>restrictions:</strong> Gluten-free</td>
+                <td>&bull; Includes daily calorie target and macro breakdown<br>&bull; All suggested foods are strictly gluten-free<br>&bull; Specifies meal timings and portion sizes in grams</td>
+                <td class="output"><pre>### Sample Input:
+
+&lt;athlete_information&gt;
+height: 178
+weight: 75
+goal: Build lean muscle and maintain cardio endurance
+restrictions: Gluten-free
+&lt;/athlete_information&gt;
+
+### Ideal Output:
+
+* Calorie Target: Approximately 2800 calories
+* Macronutrient Breakdown: Protein (170g), Fat (90g), Carbs (420g)
+
+### Meal Plan:
+
+* **Breakfast (7:00 AM)**: Scrambled eggs (240g) with spinach (20g), gluten-free whole grain toast (120g), and avocado (100g)
+* **Mid-Morning Snack (10:30 AM)**: Apple (150g) with almond butter (60g)
+* **Lunch (1:00 PM)**: Grilled chicken breast (140g) salad with mixed greens (40g), gluten-free vinaigrette (20g), and berries (120g)
+* **Mid-Afternoon Snack (4:00 PM)**: Greek yogurt (200g) with honey (30g) and walnuts (50g)
+* **Dinner (7:00 PM)**: Grilled turkey breast (160g), roasted sweet potato (250g), and steamed green beans (100g)
+* **Pre-Bedtime Snack (9:30 PM)**: Cottage cheese (180g) with sliced peaches (150g)
+
+This meal plan provides a balanced mix of protein, healthy fats, and complex carbohydrates to support the athlete's goals of building lean muscle and maintaining cardio endurance while adhering to gluten-free dietary restrictions. The calorie target is approximately 2800 calories, which will provide the necessary energy for intense training sessions and recovery.</pre></td>
+                <td><span class="score score-high">8</span></td>
+                <td>The meal plan provided is well-structured and meets the athlete's dietary needs, including a balanced mix of protein, healthy fats, and complex carbohydrates. However, it could be improved by adding more detailed information about macronutrient breakdowns and specific calorie targets for each meal.</td>
+            </tr>
+        
+            <tr>
+                <td><strong>Standard test scenario #1 for Write a compact, concise 1-day meal plan for a single athlete</strong></td>
+                <td><strong>height:</strong> 178<br><strong>weight:</strong> 75<br><strong>goal:</strong> Build lean muscle and maintain cardio endurance<br><strong>restrictions:</strong> Gluten-free</td>
+                <td>&bull; Includes daily calorie target and macro breakdown<br>&bull; All suggested foods are strictly gluten-free<br>&bull; Specifies meal timings and portion sizes in grams</td>
+                <td class="output"><pre>### Meal Plan for the Athlete
+
+&lt;athlete_information&gt;
+- Height: 178 cm
+- Weight: 75 kg
+- Goal: Build lean muscle and maintain cardio endurance
+- Dietary restrictions: Gluten-free
+&lt;/athlete_information&gt;
+
+Based on the athlete's requirements, a one-day meal plan has been created to support their goal of building lean muscle and maintaining cardio endurance while adhering to gluten-free dietary restrictions.
+
+### Calculating Daily Calorie Intake
+
+To calculate the daily calorie intake for this athlete, we can use the following formula:
+
+* Daily calories = (weight in kg x 4.35) + (age in years x 500) - (activity level x 50)
+
+Assuming an age of 25 and an activity level of 6 (high-intensity exercise), the daily calorie intake would be:
+
+* Daily calories ≈ (75 kg x 4.35) + (25 x 500) - (6 x 50) = 2500
+
+### Macronutrient Breakdown
+
+To ensure adequate protein, fat, and carbohydrate intake for muscle building and cardio endurance, the following macronutrient breakdown is recommended:
+
+* Protein: 1.6-2.2 grams/kg body weight (120g)
+* Fat: 20-25% of total calories (70g)
+* Carbohydrates: 55-65% of total calories (340g)
+
+### Meal Plan
+
+Here's a sample one-day meal plan for the athlete, with portion sizes in grams:
+
+#### Breakfast (7:00 AM)
+
+* Gluten-free oatmeal (100g) cooked with almond milk (240g)
+	+ Protein: 10g
+	+ Fat: 4g
+	+ Carbohydrates: 40g
+
+#### Mid-Morning Snack (10:30 AM)
+
+* Apple slices (150g) with almond butter (8g)
+	+ Protein: 4g
+	+ Fat: 16g
+	+ Carbohydrates: 20g
+
+#### Lunch (1:00 PM)
+
+* Grilled chicken breast (120g) mixed greens salad with light vinaigrette (30g)
+	+ Protein: 40g
+	+ Fat: 10g
+	+ Carbohydrates: 5g
+
+#### Pre-Workout Snack (3:00 PM)
+
+* Banana (150g) and coconut water (240g)
+	+ Protein: 2g
+	+ Fat: 0.5g
+	+ Carbohydrates: 40g
+
+#### Post-Workout Meal (6:00 PM)
+
+* Grilled salmon (140g) with steamed broccoli (150g) and brown rice (150g)
+	+ Protein: 60g
+	+ Fat: 20g
+	+ Carbohydrates: 30g
+
+#### Dinner (7:00 PM)
+
+* Quinoa and black bean bowl (200g quinoa, 250g cooked black beans, 100g diced tomatoes) with avocado slices (50g)
+	+ Protein: 15g
+	+ Fat: 20g
+	+ Carbohydrates: 45g
+
+### Total Daily Intake
+
+* Calories: approximately 2500
+* Macronutrient Breakdown:
+	+ Protein: 141g
+	+ Fat: 70g
+	+ Carbohydrates: 340g</pre></td>
+                <td><span class="score score-high">8</span></td>
+                <td>The meal plan meets the requirements of providing daily calorie and macro breakdown, with all suggested foods being strictly gluten-free. However, it lacks specific portion sizes in grams, which could be an improvement for precision.</td>
+            </tr>
+        
+        </tbody>
+    </table>
+</body>
+</html>

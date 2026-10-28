@@ -1,0 +1,14 @@
+[
+  {
+    "task": "Validate an AWS IAM user's access key",
+    "format": "python"
+  },
+  {
+    "task": "Parse a valid AWS S3 bucket policy in JSON format",
+    "format": "json"
+  },
+  {
+    "task": "Extract the AWS region from a given endpoint URL using regular expression",
+    "format": "regex"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "prompt_inputs": {
+      "height": "178",
+      "weight": "75",
+      "goal": "Build lean muscle and maintain cardio endurance",
+      "restrictions": "Gluten-free"
+    },
+    "solution_criteria": [
+      "Includes daily calorie target and macro breakdown",
+      "All suggested foods are strictly gluten-free",
+      "Specifies meal timings and portion sizes in grams"
+    ],
+    "task_description": "Write a compact, concise 1-day meal plan for a single athlete",
+    "scenario": "Standard test scenario #2 for Write a compact, concise 1-day meal plan for a single athlete"
+  },
+  {
+    "prompt_inputs": {
+      "height": "178",
+      "weight": "75",
+      "goal": "Build lean muscle and maintain cardio endurance",
+      "restrictions": "Gluten-free"
+    },
+    "solution_criteria": [
+      "Includes daily calorie target and macro breakdown",
+      "All suggested foods are strictly gluten-free",
+      "Specifies meal timings and portion sizes in grams"
+    ],
+    "task_description": "Write a compact, concise 1-day meal plan for a single athlete",
+    "scenario": "Standard test scenario #1 for Write a compact, concise 1-day meal plan for a single athlete"
+  }
+]

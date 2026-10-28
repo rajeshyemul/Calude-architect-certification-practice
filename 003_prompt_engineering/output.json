@@ -1,0 +1,42 @@
+[
+  {
+    "test_case": {
+      "prompt_inputs": {
+        "height": "178",
+        "weight": "75",
+        "goal": "Build lean muscle and maintain cardio endurance",
+        "restrictions": "Gluten-free"
+      },
+      "solution_criteria": [
+        "Includes daily calorie target and macro breakdown",
+        "All suggested foods are strictly gluten-free",
+        "Specifies meal timings and portion sizes in grams"
+      ],
+      "task_description": "Write a compact, concise 1-day meal plan for a single athlete",
+      "scenario": "Standard test scenario #2 for Write a compact, concise 1-day meal plan for a single athlete"
+    },
+    "output": "### Sample Input:\n\n<athlete_information>\nheight: 178\nweight: 75\ngoal: Build lean muscle and maintain cardio endurance\nrestrictions: Gluten-free\n</athlete_information>\n\n### Ideal Output:\n\n* Calorie Target: Approximately 2800 calories\n* Macronutrient Breakdown: Protein (170g), Fat (90g), Carbs (420g)\n\n### Meal Plan:\n\n* **Breakfast (7:00 AM)**: Scrambled eggs (240g) with spinach (20g), gluten-free whole grain toast (120g), and avocado (100g)\n* **Mid-Morning Snack (10:30 AM)**: Apple (150g) with almond butter (60g)\n* **Lunch (1:00 PM)**: Grilled chicken breast (140g) salad with mixed greens (40g), gluten-free vinaigrette (20g), and berries (120g)\n* **Mid-Afternoon Snack (4:00 PM)**: Greek yogurt (200g) with honey (30g) and walnuts (50g)\n* **Dinner (7:00 PM)**: Grilled turkey breast (160g), roasted sweet potato (250g), and steamed green beans (100g)\n* **Pre-Bedtime Snack (9:30 PM)**: Cottage cheese (180g) with sliced peaches (150g)\n\nThis meal plan provides a balanced mix of protein, healthy fats, and complex carbohydrates to support the athlete's goals of building lean muscle and maintaining cardio endurance while adhering to gluten-free dietary restrictions. The calorie target is approximately 2800 calories, which will provide the necessary energy for intense training sessions and recovery.",
+    "score": 8,
+    "reasoning": "The meal plan provided is well-structured and meets the athlete's dietary needs, including a balanced mix of protein, healthy fats, and complex carbohydrates. However, it could be improved by adding more detailed information about macronutrient breakdowns and specific calorie targets for each meal."
+  },
+  {
+    "test_case": {
+      "prompt_inputs": {
+        "height": "178",
+        "weight": "75",
+        "goal": "Build lean muscle and maintain cardio endurance",
+        "restrictions": "Gluten-free"
+      },
+      "solution_criteria": [
+        "Includes daily calorie target and macro breakdown",
+        "All suggested foods are strictly gluten-free",
+        "Specifies meal timings and portion sizes in grams"
+      ],
+      "task_description": "Write a compact, concise 1-day meal plan for a single athlete",
+      "scenario": "Standard test scenario #1 for Write a compact, concise 1-day meal plan for a single athlete"
+    },
+    "output": "### Meal Plan for the Athlete\n\n<athlete_information>\n- Height: 178 cm\n- Weight: 75 kg\n- Goal: Build lean muscle and maintain cardio endurance\n- Dietary restrictions: Gluten-free\n</athlete_information>\n\nBased on the athlete's requirements, a one-day meal plan has been created to support their goal of building lean muscle and maintaining cardio endurance while adhering to gluten-free dietary restrictions.\n\n### Calculating Daily Calorie Intake\n\nTo calculate the daily calorie intake for this athlete, we can use the following formula:\n\n* Daily calories = (weight in kg x 4.35) + (age in years x 500) - (activity level x 50)\n\nAssuming an age of 25 and an activity level of 6 (high-intensity exercise), the daily calorie intake would be:\n\n* Daily calories ≈ (75 kg x 4.35) + (25 x 500) - (6 x 50) = 2500\n\n### Macronutrient Breakdown\n\nTo ensure adequate protein, fat, and carbohydrate intake for muscle building and cardio endurance, the following macronutrient breakdown is recommended:\n\n* Protein: 1.6-2.2 grams/kg body weight (120g)\n* Fat: 20-25% of total calories (70g)\n* Carbohydrates: 55-65% of total calories (340g)\n\n### Meal Plan\n\nHere's a sample one-day meal plan for the athlete, with portion sizes in grams:\n\n#### Breakfast (7:00 AM)\n\n* Gluten-free oatmeal (100g) cooked with almond milk (240g)\n\t+ Protein: 10g\n\t+ Fat: 4g\n\t+ Carbohydrates: 40g\n\n#### Mid-Morning Snack (10:30 AM)\n\n* Apple slices (150g) with almond butter (8g)\n\t+ Protein: 4g\n\t+ Fat: 16g\n\t+ Carbohydrates: 20g\n\n#### Lunch (1:00 PM)\n\n* Grilled chicken breast (120g) mixed greens salad with light vinaigrette (30g)\n\t+ Protein: 40g\n\t+ Fat: 10g\n\t+ Carbohydrates: 5g\n\n#### Pre-Workout Snack (3:00 PM)\n\n* Banana (150g) and coconut water (240g)\n\t+ Protein: 2g\n\t+ Fat: 0.5g\n\t+ Carbohydrates: 40g\n\n#### Post-Workout Meal (6:00 PM)\n\n* Grilled salmon (140g) with steamed broccoli (150g) and brown rice (150g)\n\t+ Protein: 60g\n\t+ Fat: 20g\n\t+ Carbohydrates: 30g\n\n#### Dinner (7:00 PM)\n\n* Quinoa and black bean bowl (200g quinoa, 250g cooked black beans, 100g diced tomatoes) with avocado slices (50g)\n\t+ Protein: 15g\n\t+ Fat: 20g\n\t+ Carbohydrates: 45g\n\n### Total Daily Intake\n\n* Calories: approximately 2500\n* Macronutrient Breakdown:\n\t+ Protein: 141g\n\t+ Fat: 70g\n\t+ Carbohydrates: 340g",
+    "score": 8,
+    "reasoning": "The meal plan meets the requirements of providing daily calorie and macro breakdown, with all suggested foods being strictly gluten-free. However, it lacks specific portion sizes in grams, which could be an improvement for precision."
+  }
+]
